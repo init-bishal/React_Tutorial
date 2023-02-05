@@ -1,0 +1,27 @@
+const Header = () => {
+     const [toggle , setToggle]=useState(true)
+  return (
+            <div > 
+            <Button variant='contained' size='large' color='error' onClick={()=>{
+                   setToggle(!toggle)
+            }}>
+              Toggle State
+            </Button>
+             {toggle && 
+             <>
+                <ul>
+                    <li>Football</li>
+                    <li>Cricket</li>
+                    <li>Tennis</li>
+                    <li>Badminton</li>
+                </ul>
+             </>}
+
+
+
+            </div>    
+         
+  )
+}
+
+export default Header
